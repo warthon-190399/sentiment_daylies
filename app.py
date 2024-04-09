@@ -80,7 +80,9 @@ end_date = st.sidebar.date_input("Hasta", pd.to_datetime("2024-04-08"))
 
 selected_df = selected_df[(selected_df["Fecha"] >= pd.to_datetime(start_date)) & (selected_df["Fecha"] <= pd.to_datetime(end_date))]
 
-#%% Tokenizacion 
+#%% Tokenizacion
+nltk.download('punkt')
+nltk.download('stopwords')
 stop_words = set(stopwords.words("spanish"))
 
 def preprocess_text(text):
