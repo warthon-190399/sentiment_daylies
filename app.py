@@ -3,6 +3,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import streamlit as st
 from wordcloud import WordCloud
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
