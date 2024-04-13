@@ -22,6 +22,8 @@ df_general = df_exten[~df_exten['Diario'].isin(['Correo', 'Gestion', 'Ojo', 'Per
 st.title("Análisis de Sentimiento del Caso Rolex")
 st.write("¡Bienvenido al análisis de sentimiento de los diarios peruanos sobre el escándalo del Caso Rolex!")
 
+logo = "logoPulseBlanco.png"
+st.sidebar.image(logo)
 st.sidebar.title("Panel de Selección")
 st.sidebar.write("En este panel puedes seleccionar el diario de tu interés y también filtrar por fechas.")
 
