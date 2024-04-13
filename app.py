@@ -98,7 +98,7 @@ selected_df["Contenido_Limpio"] =  selected_df["Contenido"].apply(preprocess_tex
 text = " ".join(selected_df["Contenido_Limpio"])
 wordcloud = WordCloud(width=800,
                       height=400,
-                      background_color='black').generate(text)
+                      background_color='white').generate(text)
 plt.figure(figsize=(15, 5))
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
